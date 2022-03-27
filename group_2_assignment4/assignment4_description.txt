@@ -1,0 +1,32 @@
+
+Assignment 4: 2D Animation 
+
+Our group animated the dinosaur extinction scene.  In our animation, T-rexs move their legs to run across the screen at different speeds, while
+in the background a shaking volcano erupts and emits debris.  The user can position the meteor with their mouse and click to let it fall to 
+the ground.  While falling, the meteor grows in size and produces and explosion with sound effects upon impact with the ground.  After the explosion
+subsides, a new meteor will appear.  
+This sequence of events runs continuously until the user exits the program.  
+
+There are three separate classes in our code that correspond to the animations of the volcano, dinosaurs, and meteor.
+
+1) Volcano Class
+The volcano and debris are created and animated with the help of this class. It animates on it's own, and shakes violently back and forth using a lerp and sin function.
+
+2) Dinosaur Class
+Dinosaurs are automatically moving across the screen with animating legs that are linked to the main class, "frame". The speeds and sizes of the dinosaurs are based off of a random function.
+
+3) Meteor Class
+The meteor and its characteristics such as shape, size, position, and speed are grouped together as a class.
+The method displayMeteor() simply displays the meteor at any x, y, and radius defined and draws a circle. 
+Before a user clicks, the x and y positions of the meteor are defined by the position of the mouse.
+Once a mouse pressed is detected, the meteor falls. The animations of the falling of the meteor is within a method moveMeteor() 
+which changes the x and y positions of the meteor to make it speed up and grow in size while falling. 
+The method explode() animates the explosion once the meteor "hits" the ground. To create the explosion effect, the meteor continues to expand
+in size while the color and transparency changes from a bright red to a faded yellow. In addition, an explosion sound effect plays once
+the meteor hits the ground (part of the EXTRA CREDIT).
+
+Work Divided:
+Dinosaur Animation - Seongwoo Jeong
+Volcano Eruption Animation - William Sears
+Meteor/Explosion Animation - Rebekah Chang
+
